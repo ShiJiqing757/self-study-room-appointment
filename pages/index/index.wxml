@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="header">
+    <text class="name">{{name}}</text>
+    <text class="phone">{{phone}}</text>
+    <text>\n</text>
+    <text class="address">{{address}}</text>
+</view>
+
+<view class="shufflingFigure">
+    <swiper autoplay="true" interval="1500" circular="true" indicator-dots="true" indicator-color="#aabbcc" indicator-active-color="#fbf374">
+        <swiper-item><image mode="scaleToFill" src="../../img/1.jpg"></image></swiper-item>
+        <swiper-item><image mode="scaleToFill" src="../../img/2.jpg"></image></swiper-item>
+        <swiper-item><image mode="scaleToFill" src="../../img/3.jpg"></image></swiper-item>
+        <swiper-item><image mode="scaleToFill" src="../../img/4.jpg"></image></swiper-item>
+    </swiper>
+</view>
+
+<scroll-view class="gundong" scroll-x="true">
+  <view class="nav">
+    <view class="{{tab==0 ? 'active':''}}" bindtap="click" data-num="0">注意事项</view>
+    <view class="{{tab==1 ? 'active':''}}" bindtap="click" data-num="1">价格说明</view>
+  </view>
+</scroll-view>
+<view class="lunbo">
+  <swiper current="{{tab}}" bindchange="change">
+    <swiper-item>
+      <text class="header-text">会员公约</text>
+      <text class="notice-text">注：请仔细阅读一下温馨提示！</text>
+      <text class="main-text">1.自习室禁止吃外卖!</text>
+        <text class="main-text">2.自习室公共区域全面禁烟！</text>
+        <text class="main-text">3.禁止使用大功率电器！自习室供电只能满足日常用电需求，违反使用规定造成损坏要照价赔偿！</text>
+        <text class="main-text">4.自习室共设置35个座位，其中1号~10号为vip区，11号~20号为双人区，21号~35号为普通区。座位均为独立写字桌，有小柜子、书架可存放物品，舒适座椅，另配备独立储物柜可免费使用！自习室内配备独立空调，可随季节调节温度。室内双千兆WIFI。</text>
+        <text class="main-text">5.设置独立休息区，可在休息区就餐，垃圾请丢到垃圾箱内。并配备饮水机、花茶、免费糖果、零食。</text>
+        <text class="main-text">6.饮水机如遇到缺水，直接找前台更换！</text>
+        <text class="main-text">7.离开座位请将座椅归位！</text>
+        <text class="main-text"> 8.自习期间遇到问题，请及时联系前台沟通。</text>
+    </swiper-item>
+    <swiper-item>
+      <text space="nbsp" class="price">小时卡      1小时       6元</text>
+      <text space="nbsp" class="price">日卡        1天         37元</text>
+      <text space="nbsp" class="price">月卡        1个月       1050元</text>
+      <text space="nbsp" class="price">季卡        3个月       3000元</text>
+      <image  mode="scaleToFill" src="../../img/seatmap.png"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="reserve">
+  <button bindtap="goTo">预定</button>
+</view>

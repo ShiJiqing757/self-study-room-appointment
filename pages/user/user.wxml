@@ -1,0 +1,42 @@
+<!--pages/user/user.wxml-->
+<view class="info">
+    <view class="photo">
+        <image src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="nickName">{{userInfo.nickName}}</view>
+    <button class="{{config.tipsshow}}" bindtap="getUserProfile">获取头像昵称</button>
+</view>
+<view class="report">
+    <view class="box">
+        <view class="data">
+            <view>累计次数</view>
+            <view>{{frequency}}次</view>
+        </view>
+        <view class="data">
+            <view>累计时长</view>
+            <view>{{thisTime}}分</view>
+        </view>
+        <view class="data">
+            <view>本次时长</view>
+            <view>{{cumulative}}分</view>
+        </view>
+    </view>
+</view>
+
+
+<view class="sign-time" wx:if="{{state!='paused'}}">
+    {{time}}
+</view>
+<view class="sign">
+    <button wx:if="{{state=='paused'}}" bindtap="qiandao">
+        <text>签到</text>
+    </button>
+    <button wx:else bindtap="tuiqian">
+        <text>退签</text>
+    </button>
+</view>
+
+<view class="kefu">
+    <text>有问题请联系客服</text>
+    <text>139XXXX6367</text>
+</view>

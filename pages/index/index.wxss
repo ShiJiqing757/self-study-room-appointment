@@ -1,0 +1,113 @@
+/**index.wxss**/
+.header{
+  width: auto;
+  height: 120rpx;
+  background-color: #fbf374;
+}
+.name{
+  font-weight: bolder;
+  position: relative;
+  display: inline-block;
+  margin: 1% 20rpx;
+}
+.phone{
+  font-weight: lighter;
+  font-size: 24rpx;
+  position: relative;
+  float: right;
+  margin: 15rpx 30rpx;
+}
+.address{
+  font-weight: lighter;
+  font-size: 24rpx;
+  margin: 0 20rpx;
+}
+
+.shufflingFigure{
+  width: auto;
+  height: 410rpx;
+}
+.shufflingFigure swiper{
+  width: 100%;
+  height: calc(750rpx * 280/520);
+}
+.shufflingFigure swiper image{
+  width: 100%;
+  background-size: cover;
+}
+
+.gundong{
+  width: 100%;
+  height: 100rpx;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.gundong .nav{
+  line-height: 100rpx;
+  display: flex;
+  background: #fff;
+}
+.gundong .nav>view{
+  margin: 0 45rpx;
+  font-size: 14px;
+}
+.nav .active{
+  color: #FA871E;
+  font-size: 15pt;
+}
+.lunbo{
+  width: 100%;
+  height: 1100rpx;
+}
+.lunbo swiper{
+  width: 100%;
+  height: 100%;
+}
+.lunbo swiper swiper-item .header-text{
+  font-size: 80rpx;
+  font-family: 'Courier New', Courier, monospace;
+  color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lunbo swiper swiper-item .notice-text{
+  font-size: 24rpx;
+  margin: 10rpx 4%;
+  display: block;
+}
+.lunbo swiper swiper-item .main-text{
+  line-height: 45rpx;
+}
+.lunbo swiper swiper-item text{
+  display: inline-block;
+  margin: 5rpx 4%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30rpx;
+  color: rgb(16, 62, 92);
+}
+.lunbo swiper swiper-item .price{
+  display: inline-block;
+  margin: 20rpx 15%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30rpx;
+  color: rgb(16, 62, 92);
+}
+.lunbo swiper swiper-item .price:first-child{
+  margin-top: 50rpx;
+}
+.lunbo swiper swiper-item image{
+  width: 100%;
+  margin-top: 10%;
+}
+
+.reserve button{
+  width: 80%;
+  background-color: #fbf374;
+  font-family: monospace;
+  border-radius: 25px;
+  position: fixed;
+  bottom: 0;
+  left: 10%;
+}

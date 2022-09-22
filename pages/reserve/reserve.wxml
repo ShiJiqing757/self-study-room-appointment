@@ -1,0 +1,45 @@
+<!--pages/reserve/reserve.wxml-->
+<view class="image">
+    <image mode="scaleToFill" src="../../img/seatmap.png"></image>
+</view>
+<text space="nbsp" class="businessHours">营业时间 08:00-24:00</text>
+<view class="bookingInformation">
+    <view>
+        <text>预定日期</text>
+        <picker mode="date" value="{{startDate}}" start="2020-01-01" end="2030-12-31" bindchange="startDate">
+            <view class="picker">{{startDate}}</view>
+        </picker>
+        <text>至</text>
+        <picker mode="date" value="{{endDate}}" start="2020-01-01" end="2030-12-31" bindchange="endDate">
+            <view class="picker">{{endDate}}</view>
+        </picker>
+    </view>
+    <view>
+        <text>预定时段</text>
+        <picker mode="time" value="{{startTime}}" start="00:00" end="23:59" bindchange="startTime">
+            <view class="picker">{{startTime}}</view>
+        </picker>
+        <text>至</text>
+        <picker mode="time" value="{{endTime}}" start="00:00" end="23:59" bindchange="endTime">
+            <view class="picker">{{endTime}}</view>
+        </picker>
+    </view>
+</view>
+<view class="divider"></view>
+<view class="seat">
+    <view class="{{item.disable ? 'wsui-btn__hover_list' : ''}}" style="background:{{item.type ? '#E0E3DA':''}}" wx:for="{{seatList}}" wx:key="index" bindtap="bindSelect" data-val="{{item.val}}" data-type="{{item.type}}">
+        <text>{{item.val}}</text>
+        <text>{{item.type ? '已预定':'当前空闲'}}</text>
+    </view>
+</view>
+<view class="reserve">
+    <view>
+        <text>当前已选</text>
+        <view class="box1"></view>
+        <text>可选</text>
+        <view class="box2"></view>
+        <text>不可选</text>
+        <view class="box3"></view>
+    </view>
+    <button bindtap="goTo">立即预定</button>
+</view>

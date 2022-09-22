@@ -1,0 +1,112 @@
+.info {
+    padding: 40rpx 0;
+    background-color: #fbf374;
+    text-align: center;
+}
+
+.info .photo {
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.info .photo image {
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 50%;
+}
+
+.info .nickName {
+    font-size: 36rpx;
+    margin-top: 20rpx;
+    margin-bottom: 10rpx;
+}
+
+button {
+    width: 60%;
+    height: 100%;
+    margin-top: 20rpx;
+    font-family: monospace;
+    font-size: 42rpx;
+    background-color: #fbf374;
+    border-radius: 25px;
+    border: 1px solid rgb(185, 185, 185);
+}
+
+.report {
+    width: 100%;
+    height: 150rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.report .box {
+    width: 90%;
+    height: 150rpx;
+    background-color: bisque;
+    border: 0.5px solid rgb(231, 217, 217);
+}
+
+.report .box .data {
+    display: inline-block;
+    width: 33%;
+    height: 100%;
+
+}
+
+.report .box .data view {
+    display: flex;
+    margin: 11% 0;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sign {
+    width: 100%;
+    height: 400rpx;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign button {
+    width: 250rpx;
+    height: 250rpx;
+    border-radius: 3em;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-time {
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.kefu {
+    width: 100%;
+    height: 120rpx;
+}
+
+.kefu text {
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.kefu text:first-child {
+    margin: 5% 0 1% 0;
+    font-size: 28rpx;
+    color: darkgray;
+}
+
+.kefu text:last-child {
+    font-size: 24rpx;
+    color: rgb(117, 114, 114);
+}

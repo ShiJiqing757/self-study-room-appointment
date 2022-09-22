@@ -1,0 +1,41 @@
+{
+  "cloud": true,
+  "pages":[
+    "pages/index/index",
+    "pages/user/user",
+    "pages/reserve/reserve",
+    "pages/Booking information/Booking information",
+    "pages/log/log"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fbf374",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true,
+    "backgroundColorTop":"#ffffff"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "iconPath":"img/home-filling.png",
+        "selectedIconPath":"img/home-filling (1).png",
+        "pagePath":"pages/index/index",
+        "text":"首页"
+      },
+      {
+        "iconPath":"img/menu (1).png",
+        "selectedIconPath":"img/menu.png",
+        "pagePath":"pages/reserve/reserve",
+        "text":"预定"
+      },
+      {
+        "iconPath":"img/user (1).png",
+        "selectedIconPath":"img/user.png",
+        "pagePath":"pages/user/user",
+        "text":"用户"
+      }
+    ]
+  }
+}
