@@ -8,4 +8,3 @@
 &nbsp;自习室管理系统主要由线上预约、及时更新座位情况、记录签到次数及累计学习时长三大模块组成
 
 ##效果图
-![首页](https://user-images.githubusercontent.com/56638663/191692562-c9044337-fd89-46ff-b190-dc9a53ee43df.png)
